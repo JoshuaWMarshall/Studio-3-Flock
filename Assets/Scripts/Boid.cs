@@ -94,10 +94,10 @@ public class Boid : MonoBehaviour
         if (nearby.Count == 0) return Vector2.zero;
 
         Vector2 sumCloseness = Vector2.zero;
-        foreach (var neighbor in nearby)
+        foreach (var nearbyBois in nearby)
         {
-            float closeness = distance - Vector2.Distance(boid.pos, neighbor.pos);
-            sumCloseness += (boid.pos - neighbor.pos) * closeness;
+            float closeness = distance - Vector2.Distance(boid.pos, nearbyBois.pos);
+            sumCloseness += (boid.pos - nearbyBois.pos) * closeness;
         }
         return sumCloseness * power;
     }
