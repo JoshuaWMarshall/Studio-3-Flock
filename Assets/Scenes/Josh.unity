@@ -251,6 +251,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c364d45b7502a242b371f8c8b6e8a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  worldSize: {x: 100, y: 100}
+  edge: 0
+  boidCount: 100
+  boidPrefab: {fileID: 5492323535850610777, guid: 6502f2a2c57f7554aa301f7bde61fa3b, type: 3}
+  boids: []
+  boidSpeed: 20
+  boidSightRange: 5
+  boidEnableSeparation: 0
+  boidEnableCohesion: 0
+  boidEnableAlignment: 0
+  boidStrengthSeparation: 1
+  boidStrengthCohesion: 1
+  boidStrengthAlignment: 1
+  debugRanges: 0
+  debugNearby: 0
+  debugSelected: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
