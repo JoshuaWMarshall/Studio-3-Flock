@@ -57,6 +57,12 @@ public class Boid : MonoBehaviour
 
         // Apply the accumulated force to velocity and position
         vel += force * Time.fixedDeltaTime;
+        // Normalize the velocity if it exceeds the maximum speed
+        float maxSpeed = BoidManager.instance.boidSpeed;
+        if (vel.magnitude > maxSpeed)
+        {
+            vel = vel.normalized * maxSpeed;
+        }
         pos += vel * Time.fixedDeltaTime;
         transform.position = pos;
 

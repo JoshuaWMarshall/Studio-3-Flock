@@ -237,21 +237,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldSize: {x: 100, y: 100}
-  edge: 0
+  edge: 1
   boidCount: 100
   boidPrefab: {fileID: 5492323535850610777, guid: 81cc236275f1792429a1ef952ef12fd2, type: 3}
   boids: []
   boidSpeed: 20
   boidSightRange: 5
-  boidEnableSeparation: 1
-  boidEnableCohesion: 1
-  boidEnableAlignment: 1
+  boidEnableSeparation: 0
+  boidEnableCohesion: 0
+  boidEnableAlignment: 0
   boidStrengthSeparation: 1
   boidStrengthCohesion: 1
   boidStrengthAlignment: 1
-  debugRanges: 0
-  debugNearby: 0
-  debugSelected: 0
+  debugRanges: 1
+  debugNearby: 1
+  debugSelected: 1
 --- !u!4 &461358126
 Transform:
   m_ObjectHideFlags: 0
